@@ -57,6 +57,8 @@ ModelImporter:
     400050: RightUpperArm
     2100000: Material.006
     2100002: Material.004
+    2100004: Material
+    2100006: Material.001
     4300000: RightArm
     4300002: LeftArm
     4300004: Body and Legs
