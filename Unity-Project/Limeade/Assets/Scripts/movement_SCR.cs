@@ -48,7 +48,6 @@ public class movement_SCR : MonoBehaviour
 
             //animation stop
             anim.SetBool("isWalking", false);
-            anim.SetBool("isWalkingBackwards", false);
 
         }
 
@@ -58,15 +57,25 @@ public class movement_SCR : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.UpArrow) == true){
-            rb.velocity = transform.forward.normalized * speed;
-        } else if (Input.GetKey(KeyCode.DownArrow) == true)
+        if (Input.GetKey(KeyCode.UpArrow) == true)
         {
-           rb.velocity = transform.forward.normalized * speed * -1;
+            rb.velocity = transform.forward.normalized * speed;
+        }
+        else if (Input.GetKey(KeyCode.DownArrow) == true)
+        {
+            rb.velocity = transform.forward.normalized * speed * -1;
         }
 
+        if (Input.GetKey(KeyCode.LeftArrow) == true)
+        {
+            transform.Rotate(-Vector3.up * speed);
+        }
+        else if (Input.GetKey(KeyCode.RightArrow) == true)
+        {
+            transform.Rotate(Vector3.up * speed);
+        }
     }
 
 
 
-}
+    }
