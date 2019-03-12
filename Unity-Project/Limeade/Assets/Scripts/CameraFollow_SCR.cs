@@ -21,6 +21,6 @@ public class CameraFollow_SCR : MonoBehaviour
     void Update()
     {
         characterPosition = playerCharacter.transform.position;
-        this.transform.position = new Vector3 (characterPosition.x + offsetX, characterPosition.y + offsetY, characterPosition.z + offsetZ);
+        this.transform.position = new Vector3 (characterPosition.x + offsetX, camPosition.y, characterPosition.z + offsetZ);
     }
 }

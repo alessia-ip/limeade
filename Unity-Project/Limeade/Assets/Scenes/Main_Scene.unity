@@ -418,6 +418,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1426245732}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &433426782
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433426781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.96
+  m_Height: 2.05
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.78, z: 0}
 --- !u!4 &575790225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4917948301475557867, guid: ae69b217195614f69989b3df5933d8cc,
@@ -714,6 +728,42 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202489254243238353, guid: 349beff590e9d45809b09f596819c785,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202489254243238353, guid: 349beff590e9d45809b09f596819c785,
+        type: 3}
+      propertyPath: m_Drag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202489254243238353, guid: 349beff590e9d45809b09f596819c785,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202489254243238353, guid: 349beff590e9d45809b09f596819c785,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 433426782, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 433426782, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_Center.y
+      value: -0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 433426782, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_Size.x
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 433426782, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_Size.z
+      value: 0.63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349beff590e9d45809b09f596819c785, type: 3}
