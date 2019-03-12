@@ -87,9 +87,11 @@ GameObject:
   m_Component:
   - component: {fileID: 841087614978092979}
   - component: {fileID: 841087614977602452}
+  - component: {fileID: 383338357}
+  - component: {fileID: 383338356}
   m_Layer: 0
   m_Name: LED_RED
-  m_TagString: Untagged
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +129,35 @@ MonoBehaviour:
   LED_Light: {fileID: 2489463273114797558}
   LED: {fileID: 841087614977602449}
   LED_Color: {r: 1, g: 0, b: 0, a: 0}
+  halfway: {r: 0, g: 0, b: 0, a: 0}
+--- !u!136 &383338357
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841087614977602451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 5.93
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &383338356
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841087614977602451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.52
+  m_Height: 5.93
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &841087614977602461
 GameObject:
   m_ObjectHideFlags: 0

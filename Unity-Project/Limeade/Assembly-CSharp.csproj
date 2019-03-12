@@ -60,10 +60,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraFollow_SCR.cs" />
+    <Compile Include="Assets\Scripts\CircuitWall.cs" />
+    <Compile Include="Assets\Scripts\FaceCam_SCR.cs" />
     <Compile Include="Assets\Scripts\groundTexturing_SCR.cs" />
-    <Compile Include="Assets\Scripts\LED_test_SCR.cs" />
+    <Compile Include="Assets\Scripts\LED_SCR.cs" />
     <Compile Include="Assets\Scripts\movement_SCR.cs" />
+    <Compile Include="Assets\Scripts\ObjectDetectorScript.cs" />
     <Compile Include="Assets\Scripts\rotateCamera.cs" />
+    <Reference Include="Cinemachine">
+      <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -73,17 +80,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
