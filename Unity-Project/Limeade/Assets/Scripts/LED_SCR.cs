@@ -14,6 +14,10 @@ public class LED_SCR : MonoBehaviour
 
     private bool activated = false;
 
+    public GameObject newSpawn;
+
+    public movement_SCR movement_;
+
     private void Start()
     {
         LED_Rend = LED.GetComponent<Renderer>();
@@ -21,18 +25,9 @@ public class LED_SCR : MonoBehaviour
         LED_Mat.EnableKeyword("_EMISSION");
 
         halfway = new Color(LED_Color.r/2, LED_Color.g/2, LED_Color.b/2, LED_Color.a/2);
-    }
 
-    void Update()
-    {
-        //    if(Input.anyKey){
-        //        LED_Mat.SetColor("_EmissionColor", LED_Color);
-        //        LED_Light.SetActive(true);
-        //    } else {
-        //        LED_Mat.SetColor("_EmissionColor", Color.black);
-        //        LED_Light.SetActive(false);
-        //    }
-        }
+        LED_Light.GetComponent<Light>().range = 6;
+    }
 
 
         private void OnTriggerEnter(Collider other)
@@ -55,11 +50,13 @@ public class LED_SCR : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.name == "ObjectDetector"){
+        if(other.name == "ObjectDetector" && activated == false){
             if (Input.GetKeyDown(KeyCode.Z) == true)
             {
                 LED_Mat.SetColor("_EmissionColor", LED_Color);
                 activated = true;
+                LED_Light.GetComponent<Light>().range = 15;
+                movement_.spawn = newSpawn.transform;
             }
         }
     }

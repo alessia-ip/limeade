@@ -37,10 +37,13 @@ public class trashlegs_SCR : MonoBehaviour
     }
 
     private void move(){
-        float distance = Vector2.Distance(this.transform.position, currentWaypoint.position);
-      
-            transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, speed * Time.deltaTime);
-      
+        transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, speed * Time.deltaTime);
+
+        Vector3 dir = currentWaypoint.position - transform.position;
+        dir.y = 0; // keep the direction strictly horizontal
+        Quaternion rot = Quaternion.LookRotation(dir);
+        // slerp to the desired rotation over time
+        transform.rotation = Quaternion.Slerp(transform.rotation, rot, speed * 1.5f * Time.deltaTime);
     } 
 
 }
