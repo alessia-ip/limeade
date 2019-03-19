@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\movement_SCR.cs" />
     <Compile Include="Assets\Scripts\ObjectDetectorScript.cs" />
     <Compile Include="Assets\Scripts\rotateCamera.cs" />
+    <Compile Include="Assets\Scripts\trashlegs_SCR.cs" />
     <Reference Include="Cinemachine">
       <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>

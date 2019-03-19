@@ -58,3 +58,27 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+*.ide
+
+*.ide
+
+*.ide-shm
+
+*.ide-wal
+
+*.csproj
+
+*.bakert
+
+*.backup
+
+Unity-Project/Limeade/Temp/UnityLockfile
+
+*.info
+
+*.dll
+
+*.pdb
+
+*.ide
