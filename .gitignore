@@ -3,6 +3,8 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+[Tt]emp/
+/[Tt]emp/
 
 # Never ignore Asset meta data
 ![Aa]ssets/**/*.meta
@@ -36,6 +38,9 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.ide
+*.ide-shm
+*.bin
 
 # Unity3D generated meta files
 *.pidb.meta
