@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollow_SCR.cs" />
+    <Compile Include="Assets\Scripts\camZoom_SCR.cs" />
+    <Compile Include="Assets\Scripts\camZoomTrigger.cs" />
     <Compile Include="Assets\Scripts\CircuitWall.cs" />
     <Compile Include="Assets\Scripts\FaceCam_SCR.cs" />
     <Compile Include="Assets\Scripts\groundTexturing_SCR.cs" />
@@ -68,8 +70,12 @@
     <Compile Include="Assets\Scripts\movement_SCR.cs" />
     <Compile Include="Assets\Scripts\ObjectDetectorScript.cs" />
     <Compile Include="Assets\Scripts\rotateCamera.cs" />
+    <Compile Include="Assets\Scripts\settofalse_scr.cs" />
+    <Compile Include="Assets\Scripts\TextGlitch_SCR.cs" />
     <Compile Include="Assets\Scripts\trashlegs_SCR.cs" />
-    <Compile Include="Assets\settofalse_scr.cs" />
+    <None Include="Assets\Minimalist Free v2.3\Shaders\Minimalist Free Sky.shader" />
+    <None Include="Assets\Minimalist Free v2.3\Shaders\Minimalist Free Standard LWRP.shader" />
+    <None Include="Assets\Minimalist Free v2.3\Shaders\Minimalist Free Standard.shader" />
     <Reference Include="Cinemachine">
       <HintPath>/Users/Alessia/GitHub/limeade/Unity-Project/Limeade/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
