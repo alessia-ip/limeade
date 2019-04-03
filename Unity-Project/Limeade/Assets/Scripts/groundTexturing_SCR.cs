@@ -17,7 +17,7 @@ public class groundTexturing_SCR : MonoBehaviour
 
 
     IEnumerator ChangeTexture(){
-        Debug.Log("Array length =" + groundTextures.Length);
+//        Debug.Log("Array length =" + groundTextures.Length);
         int i = Random.Range(0, groundTextures.Length);
         Debug.Log(i);
         thisRenderer.material.SetTexture("_MainTex", groundTextures[i]);

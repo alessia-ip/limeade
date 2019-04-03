@@ -15,6 +15,8 @@ public class movement_SCR : MonoBehaviour
 
     private Rigidbody rb;
 
+    private bool isGrounded;
+
     //animation
     public Animator anim;
 
@@ -42,48 +44,67 @@ public class movement_SCR : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //animation
-        if(Input.GetKey(KeyCode.UpArrow) == true || Input.GetKey(KeyCode.DownArrow) == true || Input.GetKey(KeyCode.LeftArrow) == true || Input.GetKey(KeyCode.RightArrow) == true || Input.GetKey(KeyCode.W) == true || Input.GetKey(KeyCode.A) == true || Input.GetKey(KeyCode.S) == true || Input.GetKey(KeyCode.D) == true)
-        {
 
+        if(isGrounded == true){
             //animation
-            anim.SetBool("isWalking", true);
-            anim.SetFloat("Direction", 1);
+            if (Input.GetKey(KeyCode.UpArrow) == true || Input.GetKey(KeyCode.DownArrow) == true || Input.GetKey(KeyCode.LeftArrow) == true || Input.GetKey(KeyCode.RightArrow) == true || Input.GetKey(KeyCode.W) == true || Input.GetKey(KeyCode.A) == true || Input.GetKey(KeyCode.S) == true || Input.GetKey(KeyCode.D) == true)
+            {
 
-        } else{
+                //animation
+                anim.SetBool("isWalking", true);
+                anim.SetFloat("Direction", 1);
 
-            //animation stop
-            anim.SetBool("isWalking", false);
+            }
+            else
+            {
 
+                //animation stop
+                anim.SetBool("isWalking", false);
+
+            }
         }
 
     }
 
+    private void OnCollisionStay(Collision collision)
+    {
+        if(collision.collider.tag == "Ground"){
+            isGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.tag == "Ground")
+        {
+            isGrounded = false;
+        }
+    }
 
     private void FixedUpdate()
     {
-        if (isAlive == true){
+        if (isAlive == true && isGrounded == true){
             if (Input.GetKey(KeyCode.UpArrow) == true || Input.GetKey(KeyCode.W))
             {
-                Vector3 relativePos = new Vector3(cardinalW, 0, 0) - this.transform.position;
+                Vector3 relativePos = new Vector3(this.transform.position.x + cardinalW, 0, 0) - this.transform.position;
                 this.transform.rotation = Quaternion.LookRotation(relativePos, Vector3.up);
                 rb.velocity = transform.forward.normalized * speed;
             }
             else if (Input.GetKey(KeyCode.DownArrow) == true || Input.GetKey(KeyCode.S))
             {
-                Vector3 relativePos = new Vector3(cardinalS, 0, 0) - this.transform.position;
+                Vector3 relativePos = new Vector3(this.transform.position.x + cardinalS, 0, 0) - this.transform.position;
                 this.transform.rotation = Quaternion.LookRotation(relativePos, Vector3.up);
                 rb.velocity = transform.forward.normalized * speed;
             }
             else if (Input.GetKey(KeyCode.LeftArrow) == true || Input.GetKey(KeyCode.A))
             {
-                Vector3 relativePos = new Vector3(0, 0, cardinalA) - this.transform.position;
+                Vector3 relativePos = new Vector3(0, 0, this.transform.position.z + cardinalA) - this.transform.position;
                 this.transform.rotation = Quaternion.LookRotation(relativePos, Vector3.up);
                 rb.velocity = transform.forward.normalized * speed;
             }
             else if (Input.GetKey(KeyCode.RightArrow) == true || Input.GetKey(KeyCode.D))
             {
-                Vector3 relativePos = new Vector3(0, 0, cardinalD) - this.transform.position;
+                Vector3 relativePos = new Vector3(0, 0, this.transform.position.z + cardinalD) - this.transform.position;
                 this.transform.rotation = Quaternion.LookRotation(relativePos, Vector3.up);
                 rb.velocity = transform.forward.normalized * speed;
             }
@@ -99,6 +120,12 @@ public class movement_SCR : MonoBehaviour
             }
             StartCoroutine(Respawn());
         }
+
+        if (collision.collider.tag == "Ground")
+        {
+            isGrounded = true;
+        }
+
     }
 
     IEnumerator Respawn(){

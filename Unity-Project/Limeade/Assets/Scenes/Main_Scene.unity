@@ -124,6 +124,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GroundCube_TextureChange (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4917948301475557871, guid: ae69b217195614f69989b3df5933d8cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4917948301475557867, guid: ae69b217195614f69989b3df5933d8cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -192,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCube_TextureChange (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917948301475557871, guid: ae69b217195614f69989b3df5933d8cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4917948301475557867, guid: ae69b217195614f69989b3df5933d8cc,
         type: 3}
@@ -697,6 +707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCube_TextureChange (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917948301475557871, guid: ae69b217195614f69989b3df5933d8cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4917948301475557867, guid: ae69b217195614f69989b3df5933d8cc,
         type: 3}
@@ -1279,6 +1294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GroundCube_TextureChange (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4917948301475557871, guid: ae69b217195614f69989b3df5933d8cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4917948301475557867, guid: ae69b217195614f69989b3df5933d8cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1352,6 +1372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCube_TextureChange (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917948301475557871, guid: ae69b217195614f69989b3df5933d8cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4917948301475557867, guid: ae69b217195614f69989b3df5933d8cc,
         type: 3}
@@ -1575,6 +1600,59 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 878063955, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 878063955, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 878063955, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195042917, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 195042917, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 195042917, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347566792, guid: 349beff590e9d45809b09f596819c785, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202489254415140861, guid: 349beff590e9d45809b09f596819c785,
+        type: 3}
+      propertyPath: spawnOne
+      value: 
+      objectReference: {fileID: 538887281}
+    - target: {fileID: 8202489254415140861, guid: 349beff590e9d45809b09f596819c785,
+        type: 3}
+      propertyPath: Up
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202489254415140861, guid: 349beff590e9d45809b09f596819c785,
+        type: 3}
+      propertyPath: Down
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202489254415140861, guid: 349beff590e9d45809b09f596819c785,
+        type: 3}
+      propertyPath: Left
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202489254415140861, guid: 349beff590e9d45809b09f596819c785,
+        type: 3}
+      propertyPath: Right
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8202489254243238353, guid: 349beff590e9d45809b09f596819c785,
         type: 3}
       propertyPath: m_IsKinematic
@@ -1610,35 +1688,6 @@ PrefabInstance:
     - target: {fileID: 433426782, guid: 349beff590e9d45809b09f596819c785, type: 3}
       propertyPath: m_Size.z
       value: 0.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202489254415140861, guid: 349beff590e9d45809b09f596819c785,
-        type: 3}
-      propertyPath: spawnOne
-      value: 
-      objectReference: {fileID: 538887281}
-    - target: {fileID: 878063955, guid: 349beff590e9d45809b09f596819c785, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 878063955, guid: 349beff590e9d45809b09f596819c785, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 878063955, guid: 349beff590e9d45809b09f596819c785, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 195042917, guid: 349beff590e9d45809b09f596819c785, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 195042917, guid: 349beff590e9d45809b09f596819c785, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 195042917, guid: 349beff590e9d45809b09f596819c785, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -5.3
       objectReference: {fileID: 0}
     - target: {fileID: 195042918, guid: 349beff590e9d45809b09f596819c785, type: 3}
       propertyPath: m_Color.a
@@ -2263,6 +2312,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GroundCube_TextureChange (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4917948301475557871, guid: ae69b217195614f69989b3df5933d8cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4917948301475557867, guid: ae69b217195614f69989b3df5933d8cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2583,6 +2637,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GroundCube_TextureChange (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4917948301475557871, guid: ae69b217195614f69989b3df5933d8cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4917948301475557867, guid: ae69b217195614f69989b3df5933d8cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2651,6 +2710,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCube_TextureChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917948301475557871, guid: ae69b217195614f69989b3df5933d8cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4917948301475557867, guid: ae69b217195614f69989b3df5933d8cc,
         type: 3}
@@ -2751,7 +2815,7 @@ GameObject:
   - component: {fileID: 4917948299638292935}
   m_Layer: 0
   m_Name: GroundCube_TextureChange (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2892,7 +2956,7 @@ GameObject:
   - component: {fileID: 4917948299837882197}
   m_Layer: 0
   m_Name: GroundCube_TextureChange (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

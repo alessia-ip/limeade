@@ -8,11 +8,27 @@ public class TextGlitch_SCR : MonoBehaviour
 
     float i;
 
+
+    bool visible = true;
+
     public Outline thisOutline;
+
+    public Text thisText;
 
     void Start()
     {
         StartCoroutine(Glitch());        
+    }
+
+
+    private void Update()
+    {
+
+        if(Input.anyKeyDown){
+            visible = false;
+            this.gameObject.SetActive(false);
+        }
+
     }
 
     IEnumerator Glitch(){
@@ -27,4 +43,7 @@ public class TextGlitch_SCR : MonoBehaviour
         thisOutline.effectDistance = new Vector2(1, 1);
         StartCoroutine(Glitch());
     }
+
+
+
 }
