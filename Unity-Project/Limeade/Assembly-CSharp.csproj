@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\camZoom_SCR.cs" />
     <Compile Include="Assets\Scripts\camZoomTrigger.cs" />
     <Compile Include="Assets\Scripts\CircuitWall.cs" />
+    <Compile Include="Assets\Scripts\cursorTexture_SCR.cs" />
     <Compile Include="Assets\Scripts\FaceCam_SCR.cs" />
     <Compile Include="Assets\Scripts\groundTexturing_SCR.cs" />
     <Compile Include="Assets\Scripts\LED_SCR.cs" />
