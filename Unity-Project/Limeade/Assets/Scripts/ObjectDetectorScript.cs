@@ -12,18 +12,21 @@ public class ObjectDetectorScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.tag);
-        if (other.tag == "Checkpoint"){
+        if (other.tag == "Checkpoint" || other.tag == "floppy"){
             //checkpointIndicator.SetActive(true);
-            StartCoroutine(FadeIn(checkpointIndicator));
+            //StartCoroutine(FadeIn(checkpointIndicator));
+            checkpointIndicator.SetActive(true);
         }
     }
 
+
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Checkpoint")
+        if (other.tag == "Checkpoint" || other.tag == "floppy")
         {
             //checkpointIndicator.SetActive(false);
-            StartCoroutine(FadeOut(checkpointIndicator));
+            //StartCoroutine(FadeOut(checkpointIndicator));
+            checkpointIndicator.SetActive(false);
         }
     }
 

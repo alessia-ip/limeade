@@ -17,6 +17,7 @@ public class LED_SCR : MonoBehaviour
     public GameObject newSpawn;
 
     public movement_SCR movement_;
+    public counterManager_SCR counterManager_;
 
     private void Start()
     {
@@ -56,7 +57,13 @@ public class LED_SCR : MonoBehaviour
                 LED_Mat.SetColor("_EmissionColor", LED_Color);
                 activated = true;
                 LED_Light.GetComponent<Light>().range = 15;
-                movement_.spawn = newSpawn.transform;
+
+                movement_.mainAudio.PlayOneShot(movement_.checkpoint);
+                counterManager_.checkpointsReached += 1;
+                movement_.spawnObj = newSpawn;
+                movement_.setNewSpawn();
+
+                //movement_.spawn = newSpawn.transform;
             }
         }
     }

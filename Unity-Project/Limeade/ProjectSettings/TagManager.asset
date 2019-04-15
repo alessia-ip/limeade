@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Checkpoint
   - Ground
+  - enemy
+  - floppy
   layers:
   - Default
   - TransparentFX

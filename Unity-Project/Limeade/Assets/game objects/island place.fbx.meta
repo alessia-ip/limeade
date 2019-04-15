@@ -135,6 +135,26 @@ ModelImporter:
     4300034: Landscape
     4300036: Landscape_2
     4300038: Palm_Tree_1
+    6400000: Cube
+    6400002: Cube_1
+    6400004: Cube_1_2
+    6400006: Cube_2
+    6400008: Cube_2_2
+    6400010: Cube_2_3
+    6400012: Cube_3
+    6400014: Cube_3_2
+    6400016: Cube_4
+    6400018: Cube_4_2
+    6400020: Cube_5
+    6400022: Cube_5_2
+    6400024: Landscape
+    6400026: Landscape_2
+    6400028: Mesh
+    6400030: Mesh_1
+    6400032: Palm_Tree_1
+    6400034: Palm_Tree_1_1
+    6400036: Seat_2
+    6400038: Seat_4
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

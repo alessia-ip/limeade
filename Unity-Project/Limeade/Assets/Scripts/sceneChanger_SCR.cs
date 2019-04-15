@@ -6,7 +6,7 @@ public class sceneChanger_SCR : MonoBehaviour
 {
 
     public void SceneChange(){
-        Initiate.Fade("Main_Scene", new Color (0,0,0), 5);
+        Initiate.Fade("SceneOne", new Color (0,0,0), 5);
     }
 
 }

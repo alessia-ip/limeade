@@ -9,7 +9,7 @@ public class movement_SCR : MonoBehaviour
 
     private bool isAlive = true;
 
-    public GameObject spawnOne;
+    public GameObject spawnObj;
 
     public float speed;
 
@@ -27,10 +27,18 @@ public class movement_SCR : MonoBehaviour
     int cardinalS = -1000;
     int cardinalD= -1000;
 
+
+    public AudioSource mainAudio;
+
+    public AudioClip deathByPit;
+    public AudioClip deathByEnemy;
+    public AudioClip checkpoint;
+    public AudioClip OS;
+
     void Start()
     {
 
-        spawn = spawnOne.transform;
+        spawn = spawnObj.transform;
 
         rb = GetComponent<Rigidbody>();
 
@@ -114,18 +122,41 @@ public class movement_SCR : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.name == "DeathPit"){
+            mainAudio.PlayOneShot(deathByPit);
             isAlive = false;
             foreach(SkinnedMeshRenderer rend in meshComp){
                 rend.enabled = false;
             }
             StartCoroutine(Respawn());
+        } else if (collision.collider.tag == "enemy"){
+            mainAudio.PlayOneShot(deathByEnemy);
+            isAlive = false;
+            foreach (SkinnedMeshRenderer rend in meshComp)
+            {
+                rend.enabled = false;
+            }
+            StartCoroutine(Respawn());
         }
+
 
         if (collision.collider.tag == "Ground")
         {
             isGrounded = true;
         }
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.name == "DeathPit"){
+            mainAudio.PlayOneShot(deathByPit);
+            isAlive = false;
+            foreach (SkinnedMeshRenderer rend in meshComp)
+            {
+                rend.enabled = false;
+            }
+            StartCoroutine(Respawn());
+        }
     }
 
     IEnumerator Respawn(){
@@ -138,6 +169,10 @@ public class movement_SCR : MonoBehaviour
             rend.enabled = true;
         }
         isAlive = true;
+    }
+
+    public void setNewSpawn(){
+        spawn = spawnObj.transform;
     }
 
 }
