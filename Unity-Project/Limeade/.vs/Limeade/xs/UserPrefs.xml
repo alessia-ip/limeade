@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{56245719-CB1E-9CDD-FF45-781C8F883CCF}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/counterManager_SCR.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/movement_SCR.cs">
     <Files>
       <File FileName="Assets/Scripts/LED_SCR.cs" Line="62" Column="57" />
-      <File FileName="Assets/Scripts/movement_SCR.cs" Line="109" Column="82" />
+      <File FileName="Assets/Scripts/movement_SCR.cs" Line="15" Column="5" />
       <File FileName="Assets/Scripts/CameraFollow_SCR.cs" Line="24" Column="78" />
       <File FileName="Assets/Scripts/groundTexturing_SCR.cs" Line="22" Column="3" />
       <File FileName="Assets/Scripts/trashlegs_SCR.cs" Line="46" Column="47" />
@@ -10,9 +10,9 @@
       <File FileName="Assets/Scripts/settofalse_scr.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/camZoom_SCR.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/camZoomTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Mouseover_SCR.cs" Line="18" Column="5" />
+      <File FileName="Assets/Scripts/Mouseover_SCR.cs" Line="18" Column="1" />
       <File FileName="Assets/Scripts/floppy_SCR.cs" Line="10" Column="43" />
-      <File FileName="Assets/Scripts/counterManager_SCR.cs" Line="23" Column="36" />
+      <File FileName="Assets/Scripts/counterManager_SCR.cs" Line="49" Column="43" />
       <File FileName="Assets/Scripts/sceneChanger_SCR.cs" Line="9" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
